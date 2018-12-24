@@ -68,7 +68,7 @@ trait FetchJobs
 			$query->orderBy('jobs.created_at', 'DESC');
 		}
 		
-         echo $query->toSql();
+        // echo $query->toSql();
         return $query->paginate($limit);
     }
 	
