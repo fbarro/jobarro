@@ -47,15 +47,20 @@
               @endif @if(Auth::guard('company')->check())              
               <li class="{{ Request::url() == route('job.seeker.list') ? 'active' : '' }}"><a href="{{ route('job.seeker.list') }}">{{__('Resume Search')}}</a> </li>              
               <li class="{{ Request::url() == route('posted.jobs') ? 'active' : '' }}"><a href="{{ route('posted.jobs') }}">{{__('Job Ads')}}</a> </li>
-                         
+              <li class="dropdown"><a href="#">{{__('My Dashboard')}} <span class="caret"></span></a>             
+                <ul class="dropdown-menu">
+                  <li><a href="{{route('company.home')}}"><i class="fa fa-tachometer" aria-hidden="true"></i> {{__('Dashboard')}}</a> </li>                 
+                  <li><a href="{{ route('post.job') }}"><i class="fa fa-desktop" aria-hidden="true"></i> {{__('Post Job')}}</a></li>
+                  <li><a href="{{route('posted.jobs')}}"><i class="fa fa-briefcase" aria-hidden="true"></i> {{__('Company Job Ads')}}</a></li>
+                  <li><a href="{{route('company.messages')}}"><i class="fa fa-envelope-o" aria-hidden="true"></i> {{__('Company Messages')}}</a></li>
+                  <li><a href="{{route('company.followers')}}"><i class="fa fa-users" aria-hidden="true"></i> {{__('Company Followers')}}</a></li>                  
+                </ul>                
+              </li>      
               <li class="dropdown userbtn">                
                 <a class="navbar-brand name-img pull-left" href="#">{{Auth::guard('company')->user()->printCompanyImage()}}</a><span class="name-text pull-left">{{Auth::guard('company')->user()->getCompanyName()}} <i class="fa fa-caret-down"></i></span>
-                <ul class="dropdown-menu">
-                  <li><a href="{{route('company.home')}}"><i class="fa fa-tachometer" aria-hidden="true"></i> {{__('Dashboard')}}</a> </li>
-                  <li><a href="{{ route('company.profile') }}"><i class="fa fa-cog" aria-hidden="true"></i> {{__('Company Settings')}}</a></li>
-                  <li><a href="{{ route('company.detail', Auth::guard('company')->user()->slug) }}"><i class="fa fa-eye" aria-hidden="true"></i> {{__('Company Public Profile')}}</a></li>
-                  <li><a href="{{ route('post.job') }}"><i class="fa fa-desktop" aria-hidden="true"></i> {{__('Post Job')}}</a></li>
-                  <li><a href="{{route('company.messages')}}"><i class="fa fa-envelope-o" aria-hidden="true"></i> {{__('Company Messages')}}</a></li>
+                <ul class="dropdown-menu">    
+                  <li><a href="{{ route('company.profile') }}"><i class="fa fa-cog" aria-hidden="true"></i> {{__('Company Settings')}}</a></li>       
+                  <li><a href="{{ route('company.detail', Auth::guard('company')->user()->slug) }}"><i class="fa fa-eye" aria-hidden="true"></i> {{__('Company Public Profile')}}</a></li>                                    
                   <li><a href="{{ route('company.logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form-header1').submit();"><i class="fa fa-sign-out" aria-hidden="true"></i> {{__('Logout')}}</a> </li>
                   <form id="logout-form-header1" action="{{ route('company.logout') }}" method="POST" style="display: none;">
                     {{ csrf_field() }}

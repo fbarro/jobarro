@@ -42,7 +42,7 @@
 
       
 
-      <div class="col-md-3">
+      <div class="col-md-7">
 
       <span id="state_dd">
 

@@ -1327,12 +1327,11 @@ label.partTime[title="Rotating"] {
 /*Page Title*/
 
 .pageTitle {
-	background-size: cover;
-	padding: 17px 0;
-	background-image: linear-gradient(to bottom right, #113579, #5882d2);
+	padding: 11px 0;
+    background-image: linear-gradient(to bottom right, #0b2350, #4683f9);
 }
 .pageTitle h1 {
-	font-size: 26px;
+	font-size: 21px;
 	font-weight: 600;
 	color: #fff;
 	margin-top: 10px;
@@ -1340,7 +1339,7 @@ label.partTime[title="Rotating"] {
 .breadCrumb {
 	text-align: right;
 	color: #fff;
-	margin-top: 20px;
+	margin-top: 14px;
 }
 .breadCrumb a {
 	color: #fff;
@@ -3973,6 +3972,9 @@ Large Mobile Screen
 .navbar-collapse {
 	padding: 0 15px;
 }
+.navbar-default {
+    font-size: 14px;
+}
 .comments .media-list li.margin-left80 {
 	margin-left: 0;
 }
@@ -4133,6 +4135,19 @@ div.sortMen{
     position: absolute;
     pointer-events: none;
 }
+#state_dd select:-ms-expand {
+    display: none;
+}
+#state_dd:after {
+	content: '\f041';
+    font: 25px FontAwesome;
+    color: #908a8a;
+    right: 11px;
+    top: 10px;
+    position: absolute;
+    pointer-events: none;
+}
+
 .searchlist {
 	margin-bottom: 47px;
 }
