@@ -1416,12 +1416,12 @@ label.partTime[title="Rotating"] {
 	line-height: 45px;
 }
 .searchform .btn {
-    border-radius: 4px;
+	border-radius: 4px;
     background: #ff9000;
     font-size: 24px;
     color: #fff;
     padding: 6px 18px;
-    background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#ff9000a8),color-stop(1,#ff9000));
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#f3af58),color-stop(1,#ff9000));
     border: 1px solid #ff9000;
 }
 .searchform .btn:hover {
@@ -4294,3 +4294,68 @@ div.sortMen{
 	font-size: 12px;
     padding: 22px 0 0 3px;
  }
+
+ /* search header */
+
+
+.link-white{
+    border-bottom:2px solid;
+    color:#ffffff;
+    text-decoration:none;
+}
+
+.link-white:hover{
+    color:#bdc3c7;
+    text-decoration:none;
+}
+
+.jumbotron-dark{
+    background-color:#333;
+    background-image:
+        url("https://i.imgur.com/2o6cukD.png"),
+        linear-gradient(165deg, rgba(250, 250, 250, 0),
+        rgba(255, 255, 255, 0) 65%, rgba(38, 38, 38, 0.1) 65.1%,
+        rgba(38, 38, 38, 0.1));
+    color:#fff;
+}
+
+.jumbotron-dark-alt{
+    background-color:#333;
+    color:#fff;
+}
+
+.jumbotron-muted{
+    background-color:#ecf0f1;
+    background-image:
+        url("https://i.imgur.com/2o6cukD.png"),
+        linear-gradient(165deg, rgba(250, 250, 250, 0),
+        rgba(255, 255, 255, 0) 65%, rgba(38, 38, 38, 0.1) 65.1%,
+        rgba(38, 38, 38, 0.1));
+}
+
+.jumbotron-primary{
+    background-color:#0b80ce;
+    background-image:        
+        linear-gradient(165deg,
+        rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 65%, rgba(38, 38, 38, 0.26) 65.1%, rgba(38, 38, 38, 0.32));
+    ;
+    color:#ffffff;
+}
+
+.jumbotron-warning{
+    background-color:#f39c12;
+    background-image:
+        url("https://i.imgur.com/2o6cukD.png"),
+        linear-gradient(165deg,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0) 65%,
+        rgba(38, 38, 38, 0.1) 65.1%,
+        rgba(38, 38, 38, 0.1));
+    color:#ffffff;
+}
+.search-desc {
+	margin-top: 47px;
+}
+.text-desc {
+	text-shadow: 1px 1px 2px #bbbcbf;
+}
