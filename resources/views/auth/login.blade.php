@@ -8,7 +8,7 @@
 <!-- Inner Page Title start -->
 @include('includes.inner_page_title', ['page_title'=>__('Login')])
 <!-- Inner Page Title end -->
-<div class="listpgWraper">
+<div class="signInWraper">
   <div class="container">
   @include('flash::message')
 
@@ -59,7 +59,8 @@
                   <div class="clearfix">
                       <div class="row row-mid">
                           <div class="col-md-6 col-sm-6"><label class="pull-left checkbox-inline"><input type="checkbox" class="remember-me"> Remember me</label></div>
-                          <div class="col-md-6 col-sm-6"> <a href="{{ route('password.request') }}" class="pull-right search_input">{{__('Forgot Your Password')}}?</a></div>                    
+                          <div class="col-md-6 col-sm-6"> <a href="{{ route('password.request') }}" class="pull-right search_input">{{__('Forgot 
+                          Password')}}?</a></div>                    
                       </div>
                   </div>
                   <div class="or-seperator"><i>or</i></div>
@@ -73,7 +74,7 @@
               </div>
               <div class="col-md-5">
                   <div class="signup_lead">
-                      <h4>Not a member yet? Sign up for FREE</span></h4>
+                      <h4>Not a member yet? Register for FREE</span></h4>
                       <ul class="list-unstyled">
                           <li><span class="fa fa-check text-success"></span> <p>To get noticed, keep your resume and profile updated, always</p></li>
                           <li><span class="fa fa-check text-success"></span> <p>Find jobs matching your salary</p></li>
@@ -82,7 +83,7 @@
                           <li><span class="fa fa-check text-success"></span> <p>Create customized alerts for the type of jobs you want to apply for</p></li>                        
                       </ul>            
                       <p class="lead">
-                      <a href="{{route('register')}}" class="btn btn-primary btn-block jz_button but_orange">Sign Up NOW for Free!</a>
+                      <a href="{{route('register')}}" class="btn btn-primary btn-block jz_button but_orange">Register NOW for Free!</a>
                       </p>
                   </div>
               </div>
