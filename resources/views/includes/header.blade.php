@@ -83,7 +83,7 @@
             
                 <ul class="dropdown-menu">
                   <li><a href="{{route('employer.login')}}">{{__('Sign in')}}</a> </li>
-                  <li><a href="{{route('register')}}">{{__('Register')}}</a> </li>
+                  <li><a href="{{route('employer.register')}}">{{__('Register')}}</a> </li>
                   <li><a href="{{route('password.request')}}">{{__('Forgot Password')}}?</a> </li>
                 </ul>
                 

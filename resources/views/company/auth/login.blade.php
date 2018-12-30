@@ -14,7 +14,7 @@
         <div class="container bg-container">
           <div class="row">
             <div class="col-md-4 login-sec">
-                <h2 class="text-center">{{__('Employer Login')}}</h2>
+                <h3 class="text-center">{{__('Employer Login')}}</h3>
                 <div class="empUseraccount">
                     <div class="userbtns">                   
                     </div>
@@ -50,7 +50,7 @@
                     
                     <!-- sign up form -->
                     <div class="newuser"><a href="{{ route('password.request') }}">{{__('Forgot Your Password')}}?</a></div>
-                    <div class="newuser"> {{__('New User')}}? <a href="{{route('register')}}" class="btn empRegister">{{__('Register Here')}}</a></div>
+                    <div class="newuser"> {{__('Already registered')}}? <a href="{{route('employer.register')}}" class="btn empRegister">{{__('Register Here')}}</a></div>
                     <!-- sign up form end--> 
                     
                   </div>

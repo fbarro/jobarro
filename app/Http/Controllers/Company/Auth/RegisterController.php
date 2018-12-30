@@ -84,4 +84,9 @@ use VerifiesUsers;
         return $this->registered($request, $company) ?: redirect($this->redirectPath());
     }
 
+    public function showRegistrationForm()
+    {
+        return view('company.auth.register');
+    }
+
 }
