@@ -1128,13 +1128,13 @@ a.wit-btn {
 	color: #999;
 }
 .jobslist li .applybtn {
-	background: #12d034;
+	background: #ffffff;
     display: inline-block;
-    color: #f8fafb;
+    color: #168fda;
     font-weight: 600;
     padding: 9px 15px;
     margin-top: 20px;
-    border: 1px solid #f3f4f5;
+    border: 1px solid #168fda;
     border-radius: 4px;
 }
 .jobslist li .applybtn:hover {
@@ -1213,7 +1213,7 @@ label.partTime[title="Rotating"] {
 *************************************************/
 
 .videowraper {
-	background: url(../images/homebg.jpg) no-repeat top;
+	background: url(../images/homebg.png) no-repeat top;
 	background-size: cover;
 	background-attachment: fixed;
 	text-align: center;

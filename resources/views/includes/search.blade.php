@@ -42,7 +42,7 @@
         @endif
       </div>
       <div class="col-lg-6">
-            <img class="img-responsive img-display" src="https://affinityjava.com/wp-content/uploads/2018/12/achievement3.png"/>
+            <img class="img-responsive img-display" src="../public/images/achievement3.png"/>
       </div>   
   </div>
 </div>

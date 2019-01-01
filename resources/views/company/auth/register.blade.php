@@ -6,7 +6,6 @@
 <!-- Header end --> 
 
 <!-- Inner Page Title start --> 
-@include('includes.inner_page_title', ['page_title'=>__('Register')]) 
 <!-- Inner Page Title end -->
 <div class="listpgWraper">
   <div class="container">
@@ -15,8 +14,8 @@
       <div class="col-md-7 col-md-offset-3">
         <div class="userRegister">
           <div class="userbtns">
-            <h3>Make the right hire with Jobsportal</h3>
-            <small>Create your employer account now</small>
+            <h3>{{__('Employer Sign Up')}}</h3>
+            <small>{{__('Create your free account now')}}</small>
           </div>
           <div class="tab-content">
             <div id="employer" class="formpanel">

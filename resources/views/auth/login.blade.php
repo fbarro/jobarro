@@ -74,7 +74,7 @@
               </div>
               <div class="col-md-5">
                   <div class="signup_lead">
-                      <h4>Not a member yet? Register for FREE</span></h4>
+                      <h4>Not a member yet? Sign Up for FREE</span></h4>
                       <ul class="list-unstyled">
                           <li><span class="fa fa-check text-success"></span> <p>To get noticed, keep your resume and profile updated, always</p></li>
                           <li><span class="fa fa-check text-success"></span> <p>Find jobs matching your salary</p></li>
@@ -83,7 +83,7 @@
                           <li><span class="fa fa-check text-success"></span> <p>Create customized alerts for the type of jobs you want to apply for</p></li>                        
                       </ul>            
                       <p class="lead">
-                      <a href="{{route('register')}}" class="btn btn-primary btn-block jz_button but_orange">Register NOW for Free!</a>
+                      <a href="{{route('register')}}" class="btn btn-primary btn-block jz_button but_orange">Sign Up NOW for Free!</a>
                       </p>
                   </div>
               </div>

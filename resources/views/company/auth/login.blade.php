@@ -5,9 +5,6 @@
 @include('includes.header')
 <!-- Header end --> 
 
-<!-- Inner Page Title start -->
-@include('includes.inner_page_title', ['page_title'=>__('Login')])
-<!-- Inner Page Title end -->
 <div class="empWraper">
  
     <section class="login-block">

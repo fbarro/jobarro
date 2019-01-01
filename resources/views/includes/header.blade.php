@@ -69,12 +69,12 @@
               </li>
               @endif @if(!Auth::user() && !Auth::guard('company')->user())
               <li class="{{ Request::url() == route('login') ? 'active' : '' }}"><a href="{{url('login')}}">{{__('Sign in')}}</a> </li>
-              <li class="{{ Request::url() == route('register') ? 'active' : '' }}"><a href="{{url('register')}}">{{__('Register')}}</a> </li>
+              <li class="{{ Request::url() == route('register') ? 'active' : '' }}"><a href="{{url('register')}}">{{__('Sign Up')}}</a> </li>
               <!--li class="dropdown"><a href="{{route('login')}}">{{__('Sign in')}} <span class="caret"></span></a> 
                 
                 <ul class="dropdown-menu">
                   <li><a href="{{route('login')}}">{{__('Sign in')}}</a> </li>
-                  <li><a href="{{route('register')}}">{{__('Register')}}</a> </li>
+                  <li><a href="{{route('register')}}">{{__('Sign Up')}}</a> </li>
                   <li><a href="{{route('password.request')}}">{{__('Forgot Password')}}?</a> </li>
                 </ul>
              
@@ -83,7 +83,7 @@
             
                 <ul class="dropdown-menu">
                   <li><a href="{{route('employer.login')}}">{{__('Sign in')}}</a> </li>
-                  <li><a href="{{route('employer.register')}}">{{__('Register')}}</a> </li>
+                  <li><a href="{{route('employer.register')}}">{{__('Sign Up')}}</a> </li>
                   <li><a href="{{route('password.request')}}">{{__('Forgot Password')}}?</a> </li>
                 </ul>
                 
