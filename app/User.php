@@ -205,6 +205,13 @@ class User extends Authenticatable
 		$image = (!empty($image))? $image:'no-no-image.gif';
         return \ImgUploader::print_image("user_images/$image", $width, $height, '/admin_assets/no-image.png', $this->getName());
     }
+
+    public function getUserImage()
+    {		
+		$image = (string)$this->image;
+        $image = (!empty($image))? $image:'no-no-image.gif';     
+        return "user_images/$image"; 
+    }
 	
 	public function getName()
 	{
